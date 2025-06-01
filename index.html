@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/menu.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -36,19 +35,10 @@
               <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#eaeae3] hover:text-[#393938] focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
-                <!--
-                  Icon when menu is closed.
-      
-                  Menu open: "hidden", Menu closed: "block"
-                -->
                 <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-                <!--
-                  Icon when menu is open.
-      
-                  Menu open: "block", Menu closed: "hidden"
-                -->
+
                 <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
@@ -60,7 +50,7 @@
               </div>
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  
                   <a href="#" class="rounded-md px-3 py-2 text-base self-center text-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Home</a>
                   <a href="#sobre" class="rounded-md px-3 py-2 text-base self-center text-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Mix Arretado</a>
                   <a href="#menu" class="rounded-md px-3 py-2 text-base self-center font-medium text-gray-300 transition delay-150 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Cardápio</a>
@@ -76,7 +66,6 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pt-2 pb-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Home</a>
             <a href="#sobre" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Mix Arretado</a>
             <a href="#menu" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Cardápio</a>
@@ -86,9 +75,7 @@
       </nav>
         
         <main id="content" class="bg-image">
-            <!--Imagem de fundo pelo backgorund-image (no home.css)-->
             <section id="home">
-                <!--Título e subtitulo da página inicial-->
                 <div id="texto_home">
                     <h1 class="title">
                         Comida que abraça e<br>
@@ -101,11 +88,9 @@
             </section>
 
         <section id="sobre" class="mix-arretado">
-            <!--#sobre - Bibliografia do restaurante, um breve resumo-->
             <section class="dados-sobre">
             <h1>Conheça nossa história</h1>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet magnam corporis tempora ipsam odit atque esse in, ullam quidem assumenda voluptas quae. Suscipit earum saepe laudantium non, quam natus reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci provident neque iure, dignissimos ex in enim. Ratione iste voluptate eligendi, voluptatum quasi optio nisi, soluta quo libero necessitatibus distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis modi voluptas reiciendis consequuntur sapiente? Eligendi ducimus tempore sed cumque veritatis quis, recusandae, quo vitae id est corporis itaque pariatur?</p>
-
                 <div class="botao-sobre">
                   <a href="./pages/mixarretao.html" id="saibaMaisLink">
                     <button id="saibaMaisButton" class="button-menu center mt-8 px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition flex items-center">
@@ -133,12 +118,9 @@
         </section>
         
         <section id="menu">
-            <!--#menu - Criação dos blocos de informção do cardápio, nomeados com a class .dish-->
             <h2 class="section-title">Cardápio</h2>
             <h3 class="section-subtitle">Nossos pratos especiais</h3>
-
             <div id="dishes">
-
                 <div class="container mx-auto p-4">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                       <div class="bg-white shadow-lg rounded-2xl p-4">
@@ -182,14 +164,9 @@
                       </div>
 
                     </div>
-                    <!-- <a href="./pages/cardapio.html"><button class="button-menu">Ver mais</button></a> -->
-
-
                   </div>
                 </div>
               </div>
-            
-              <!-- <a href="./pages/cardapio.html"><button class="button-menu">Ver mais</button></a> -->
               <div class="flex justify-center mt-6">
                 <a href="./pages/cardapio.html" id="verMaisLink">
                   <button id="verMaisButton" class="button-menu px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition">
@@ -214,17 +191,14 @@
                     window.location.href = './pages/cardapio.html';
                   }, 500);
                 });
-              </script>
-              
+              </script>             
         </section>
 
         <section id="contato-mix" class="contato">
-            <!--#contato - Área reservada para os botões de redirecionamento de contato e localização do restaurante-->
             <div id="contatos">
                 <h1>Fale com a gente</h1>
                 <p>Ficou com água na boca? Faz a tua avaliação mininu!</p>
                 
-
 <form class="max-w-md mx-auto my-5">
     <div class="grid md:grid-cols-2 md:gap-6 my-5">
         <div class="relative z-0 w-full mb-5 group">
@@ -280,15 +254,12 @@
                     </a>
                 </div>
             </div>
-            
-            <!--iframe Google Maps com a localização-->
             <iframe class="mapa"
              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.135361913827!2d-34.85584978839006!3d-7.11030779286354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd5b93f6e4d3%3A0x4a4bb4519122b763!2sMix%20Arretado!5e0!3m2!1spt-BR!2sbr!4v1738957215529!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
     </main>
     <footer>
-        <!--Footer do site-->
         <p>© Mix Arretado. Todos os direitos reservados.</p>
     </footer>
 </body>
