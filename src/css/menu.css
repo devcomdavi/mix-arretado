@@ -16,6 +16,10 @@
     margin: 2rem;
 }
 
+#dishes h2 {
+    font-family: xilosa;
+}
+
 .dish{
     display: flex;
     flex-direction: column;
@@ -47,7 +51,7 @@
 
 .section-title{/*título */
     color: orange;
-    font-family: Xilosa;
+    font-family: xilosa;
     font-size: 5rem;
 }
 
