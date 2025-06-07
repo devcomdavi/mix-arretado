@@ -44,5 +44,5 @@ O **Mix Arretado** é um restaurante temático de culinária nordestina que valo
 | Foto                                                       | Nome              | GitHub                                       | LinkedIn                                       |
 | ---------------------------------------------------------- | ----------------- | -------------------------------------------- | ---------------------------------------------- |
 | <img src="https://github.com/devcomdavi.png" width="100"/> | **Davi Holanda**  | [@joaosertao](https://github.com/devcomdavi) | [LinkedIn](https://linkedin.com/in/davihmn/)   |
-| <img src="https://github.com/cpmcaio.png" width="100"/>    | **Maria Fogão**   | [@mariafogao](https://github.com/cpmcaio)    | [LinkedIn](https://linkedin.com/in/cpmcaio/)   |
-| <img src="https://github.com/ian2z.png" width="100"/>      | **Chico Quentão** | [@chicoquentao](https://github.com/ian2z)    | [LinkedIn](https://linkedin.com/in/josef-ian/) |
+| <img src="https://github.com/cpmcaio.png" width="100"/>    | **Caio da Costa** | [@mariafogao](https://github.com/cpmcaio)    | [LinkedIn](https://linkedin.com/in/cpmcaio/)   |
+| <img src="https://github.com/ian2z.png" width="100"/>      | **Josef Ian**     | [@chicoquentao](https://github.com/ian2z)    | [LinkedIn](https://linkedin.com/in/josef-ian/) |
