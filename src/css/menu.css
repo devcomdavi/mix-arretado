@@ -20,30 +20,6 @@
     font-family: xilosa;
 }
 
-.dish{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    width: 30vw;
-    background-color: white;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 8px;
-}
-
-.informacoes-dish {
-    padding: 1rem;
-    text-align: center;
-}
-
-.dish-title {/*texto do menu*/
-    text-align: center;
-    font-family: xilosa;
-    font-size: 2rem;
-    color: #ffa500;
-}
-
 .dish-image{ /*configurações do layout dos pratos */
     max-height: 200px;
     border-radius: 10px;
@@ -60,42 +36,12 @@
     color: white;
 }
 
-.section-subtitle, .section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button-menu {/*configuração dos botões do menu */
-    min-width: 150px; /* Garante um tamanho mínimo para não encolher muito */
-    max-width: 90%;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    color: #3B1F11;
-    background-color: orange;
-    border-radius: 5px;
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    margin: auto;
-}
-
-
 .button-menu:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
 
 @media screen and (min-width: 1065px) {/*configuração de responsividade */
-    .dish {
-        flex-basis: 50%;
-        padding: 10px;
-    }
-
-    .dish img {
-        border-radius: 10px;
-    }
-
     #dishes {
         flex-wrap: nowrap;
     }
@@ -106,11 +52,6 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .dish {
-        flex-basis: 54%;
-    }
-
 }
 
 @media screen and (max-width: 550px){
@@ -118,21 +59,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .dish{
-        flex-basis: 70%;
-    }
 }
 
 @media screen and (max-width: 425px){ 
-    .dish{
-        flex-basis: 100%;
-    }
-
-    .dish img{
-        width: 100%;
-    }
-
     #menu .section-subtitle{
         text-align: center;
     }

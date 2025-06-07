@@ -20,51 +20,6 @@ section{
     padding: 28px 8%;
 }
 
-.social-media{
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.social-media a{
-    display: flex;
-    align-items: center;
-    justify-content:  center;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.3rem;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #000000;
-}
-
-
-.social-media a:hover{
-    box-shadow: 0px 0px 12px 2px rgb(198, 198, 198);
-}
-
-.nossas-redes{
-    margin-top: 20px;
-}
-
-.mix-arretado{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.mix-arretado img {
-    flex: 1;
-}
-
-.mix-arretado h1{
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
 #contato-mix{
     display: flex;
     flex: 1;

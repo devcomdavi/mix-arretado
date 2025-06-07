@@ -58,39 +58,3 @@ header #navbar #nav-list{
     text-decoration: underline;
     transition: color 0.5s; /* transição de cor */
 }
-
-/* excluindo o botão em relsoluções acima de 600px*/
-#bt-mobile{
-    display: none;
-}
-
-#mobile-menu{
-    display: none;
-}
-
-#mobile-menu.hidden{
-    display: block;
-}
-
-/* point break do navbar para mobile */
-@media screen and (max-width: 900px){
-    
-    #nav-list .nav-item{
-        display: none; /* exclui os links */
-    }
-
-
-    /* adiciona o botão de lista */
-    #bt-mobile{
-        display: flex;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: white;
-    }
-
-    #bt-mobile:hover {
-        color: #FED34F;
-    }
-}

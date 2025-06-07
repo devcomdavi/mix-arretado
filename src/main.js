@@ -10,12 +10,27 @@ menuButton.addEventListener("click", function () {
     });
 });
 
+// spinner do saiba mais
+document.getElementById('saibaMaisButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    // Exibe o spinner e altera o texto para "Carregando..."
+    document.getElementById('saibaMaisSpinner').classList.remove('hidden');
+    document.getElementById('saibaMaisSpinner').classList.add('inline');
+    document.getElementById('saibaMaisText').textContent = 'Carregando...';
 
-// spinner ver mais
-document.getElementById('verMaisLink').addEventListener('click', function(event) {
+    // Atraso para garantir que o spinner seja visível antes do redirecionamento
+    setTimeout(function() {
+    window.location.href = './pages/cardapio.html';
+    }, 500);
+});
+
+
+// spinner do cardápio
+document.getElementById('verMaisButton').addEventListener('click', function(event) {
     event.preventDefault();
     // Exibe o spinner e altera o texto para "Carregando..."
     document.getElementById('verMaisSpinner').classList.remove('hidden');
+    document.getElementById('verMaisSpinner').classList.add('inline');
     document.getElementById('verMaisText').textContent = 'Carregando...';
 
     // Atraso para garantir que o spinner seja visível antes do redirecionamento
@@ -27,5 +42,6 @@ document.getElementById('verMaisLink').addEventListener('click', function(event)
 // spinner fomulario
 document.getElementById('submitButton').addEventListener('click', function() {
     document.getElementById('submitSpinner').classList.remove('hidden');
+    document.getElementById('submitSpinner').classList.add('inline');
     document.getElementById('submitText').textContent = 'Processando...';
 });
