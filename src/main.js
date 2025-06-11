@@ -86,3 +86,4 @@ document.getElementById("menu-toggle").addEventListener("click", function() {
     const menu = document.getElementById("category-menu");
         menu.classList.toggle("hidden");
 });
+
