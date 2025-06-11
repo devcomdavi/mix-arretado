@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arretado | Sobre Nós</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 </head>
 <body class="bg-[#f0f8ff]">
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-const menuButton = document.querySelector("button[aria-controls='mobile-menu']");
-const mobileMenu = document.getElementById("mobile-menu");
-
-menuButton.addEventListener("click", function () {
-    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", !isExpanded);
-    mobileMenu.classList.toggle("hidden");
-});
-});
-</script>
+<script type="module" src="/src/main.js"></script>
 
 <nav class="bg-[#3B1F11] fixed top-0 left-0 z-10 w-full">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -50,7 +38,7 @@ menuButton.addEventListener("click", function () {
         </div>
         <div class="flex flex-1 items-center justify-center sm:justify-center">
           <div class="flex shrink-0 items-center">
-            <a href="#"><img class="h-[90px] w-[90px]" src="../imagens/logo3 100.png" alt="Mix Arretado"></a>
+            <a href="#"><img class="h-[90px] w-[90px]" src="../imagens/logo_usando.png" alt="Mix Arretado"></a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -68,7 +56,7 @@ menuButton.addEventListener("click", function () {
     </div>
   
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div class="hidden sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="../index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Home</a>
@@ -136,6 +124,7 @@ menuButton.addEventListener("click", function () {
             </li>
           </ul>
     </section>
-    
+
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

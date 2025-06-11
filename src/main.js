@@ -20,7 +20,7 @@ document.getElementById('saibaMaisButton').addEventListener('click', function(ev
 
     // Atraso para garantir que o spinner seja visível antes do redirecionamento
     setTimeout(function() {
-    window.location.href = './pages/cardapio.html';
+    window.location.href = '/pages/sobre.html';
     }, 500);
 });
 
@@ -35,7 +35,7 @@ document.getElementById('verMaisButton').addEventListener('click', function(even
 
     // Atraso para garantir que o spinner seja visível antes do redirecionamento
     setTimeout(function() {
-    window.location.href = './pages/cardapio.html';
+    window.location.href = '/pages/cardapio.html';
     }, 500);
 });
 
@@ -44,4 +44,45 @@ document.getElementById('submitButton').addEventListener('click', function() {
     document.getElementById('submitSpinner').classList.remove('hidden');
     document.getElementById('submitSpinner').classList.add('inline');
     document.getElementById('submitText').textContent = 'Processando...';
+});
+
+
+// cardapio.html
+    // Obtendo os botões de categoria
+const buttons = document.querySelectorAll('.category-btn');
+      
+    // Obtendo todos os pratos do cardápio
+const menuItems = document.querySelectorAll('.menu-item');
+      
+    // Função de filtro
+function filterMenu(category) {
+    // Se a categoria for 'all', exibe todos os pratos
+    if (category === 'all') {
+        menuItems.forEach(item => {
+            item.style.display = 'block';
+        });
+    } else {
+        // Exibe apenas os pratos da categoria selecionada
+        menuItems.forEach(item => {
+            if (item.getAttribute('data-category') === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+}
+      
+    // Atribuindo evento de clique a cada botão de categoria
+buttons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const category = event.target.innerText.toLowerCase(); // Obtém o nome da categoria a partir do texto do botão
+            filterMenu(category); // Filtra o cardápio com base na categoria
+        });
+});
+
+
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    const menu = document.getElementById("category-menu");
+        menu.classList.toggle("hidden");
 });

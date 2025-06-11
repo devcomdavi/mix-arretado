@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mix Arretado | Cardápio</title>
-    <link href="https://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
+    <!-- <link href="https://fonts.cdnfonts.com/css/xilosa" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#F0F8FF]"> 
-    
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-const menuButton = document.querySelector("button[aria-controls='mobile-menu']");
-const mobileMenu = document.getElementById("mobile-menu");
-
-menuButton.addEventListener("click", function () {
-    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", !isExpanded);
-    mobileMenu.classList.toggle("hidden");
-});
-});
-</script>
+<script type="module" src="/src/main.js"></script>
 
 <nav class="bg-[#3B1F11] fixed top-0 left-0 z-10 w-full">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -50,13 +38,13 @@ menuButton.addEventListener("click", function () {
         </div>
         <div class="flex flex-1 items-center justify-center sm:justify-center">
           <div class="flex shrink-0 items-center">
-            <a href="#"><img class="h-[90px] w-[90px]" src="../imagens/logo3 100.png" alt="Mix Arretado"></a>
+            <a href="#"><img class="h-[90px] w-[90px]" src="../imagens/logo_usando.png" alt="Mix Arretado"></a>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="../index.html" class="rounded-md px-3 py-2 text-base self-center text-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Home</a>
-              <a href="./mixarretao.html" class="rounded-md px-3 py-2 text-base self-center text-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Mix Arretado</a>
+              <a href="./sobre.html" class="rounded-md px-3 py-2 text-base self-center text-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Mix Arretado</a>
               <a href="#" class="rounded-md px-3 py-2 text-base self-center font-medium text-gray-300 transition delay-150 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Cardápio</a>
               <a href="../#contato-mix" class="rounded-md px-3 py-2 text-base self-center font-medium text-gray-300 transition delay-100 duration-150 ease-in hover:scale-105 hover:underline hover:text-[orange]">Contato</a>
             </div>
@@ -68,11 +56,11 @@ menuButton.addEventListener("click", function () {
     </div>
   
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div class="hidden sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pt-2 pb-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="../index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Home</a>
-        <a href="./mixarretao.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Mix Arretado</a>
+        <a href="./sobre.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Mix Arretado</a>
         <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Cardápio</a>
         <a href="../#contato-mix" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#eaeae3] hover:text-[#393938]">Contato</a>
       </div>
@@ -1184,47 +1172,6 @@ menuButton.addEventListener("click", function () {
         </div>
     </div>
 
-    <script>
-      // Obtendo os botões de categoria
-      const buttons = document.querySelectorAll('.category-btn');
-      
-      // Obtendo todos os pratos do cardápio
-      const menuItems = document.querySelectorAll('.menu-item');
-      
-      // Função de filtro
-      function filterMenu(category) {
-        // Se a categoria for 'all', exibe todos os pratos
-        if (category === 'all') {
-          menuItems.forEach(item => {
-            item.style.display = 'block';
-          });
-        } else {
-          // Exibe apenas os pratos da categoria selecionada
-          menuItems.forEach(item => {
-            if (item.getAttribute('data-category') === category) {
-              item.style.display = 'block';
-            } else {
-              item.style.display = 'none';
-            }
-          });
-        }
-      }
-      
-      // Atribuindo evento de clique a cada botão de categoria
-      buttons.forEach(button => {
-        button.addEventListener('click', (event) => {
-          const category = event.target.innerText.toLowerCase(); // Obtém o nome da categoria a partir do texto do botão
-          filterMenu(category); // Filtra o cardápio com base na categoria
-        });
-      });
-    </script>
-
-<script>
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-      const menu = document.getElementById("category-menu");
-      menu.classList.toggle("hidden");
-  });
-</script>
-
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
