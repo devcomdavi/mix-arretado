@@ -9,12 +9,12 @@ const pratos = [
     preco: '29,90' // Preencher com o preço do prato
   },
   {
-    id: '',
-    imagem: '',
-    nome: '',
-    descricao: '',
-    categoria: '',
-    preco: ''
+    id: 'pc',
+    imagem: '/imagens/template_prato.png',
+    nome: 'teste menu',
+    descricao: 'teste',
+    categoria: 'cuscuz',
+    preco: '20,50'
   },
   {
     id: '',
