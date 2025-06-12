@@ -2,17 +2,17 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base:'/mix-arretado/',
+  base: '/mix-arretado/',
   plugins: [
     tailwindcss(),
   ],
   build: {
     rollupOptions: {
       input: {
-        main: './index.html',
-        cardapio: './mix-arretado/pages/cardapio.html',
-        sobre: './mix-arretado/pages/sobre.html',
-      },
-    },
-  },
-});
+        main: 'index.html',
+        cardapio: 'pages/cardapio.html',
+        sobre: 'pages/sobre.html',
+      }
+    }
+  }
+})

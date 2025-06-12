@@ -2,7 +2,7 @@
 const pratos = [
   {
     id: 'cal',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Alagoas',
     descricao: 'Regado com manteiga da terra',
     categoria: 'cuscuz',
@@ -10,7 +10,7 @@ const pratos = [
   },
   {
     id: 'cgo',
-    imagem: '/mix-arretado/public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Goiás',
     descricao: 'Ovos fritos: mexidos ou inteiros',
     categoria: 'cuscuz',
@@ -18,7 +18,7 @@ const pratos = [
   },
   {
     id: 'crs',
-    imagem: './public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Rio Grande do Sul',
     descricao: 'Queijo coalho, manteiga ou mussarela',
     categoria: 'cuscuz',
@@ -34,7 +34,7 @@ const pratos = [
   },
   {
     id: 'cba',
-    imagem: 'public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bahia',
     descricao: 'calabresa e queijo coalho',
     categoria: 'cuscuz',
@@ -42,7 +42,7 @@ const pratos = [
   },
   {
     id: 'cmt',
-    imagem: '/public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Mato Grosso',
     descricao: 'Galinha guisada: filé de peito ou sobrecoxa',
     categoria: 'cuscuz',
@@ -50,7 +50,7 @@ const pratos = [
   },
   {
     id: 'cpb',
-    imagem: '../../../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Paraíba',
     descricao: 'Carne do sol na nata',
     categoria: 'cuscuz',
@@ -58,7 +58,7 @@ const pratos = [
   },
   {
     id: 'cce',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Ceará',
     descricao: 'Cubos de carne de sol frita acebolada e queijo',
     categoria: 'cuscuz',
@@ -66,7 +66,7 @@ const pratos = [
   },
   {
     id: 'crn',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Rio Grande do Norte',
     descricao: 'Carne guisada',
     categoria: 'cuscuz',
@@ -74,7 +74,7 @@ const pratos = [
   },
   {
     id: 'cac',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Acre',
     descricao: 'Bode guisado',
     categoria: 'cuscuz',
@@ -82,7 +82,7 @@ const pratos = [
   },
   {
     id: 'cma',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Maranhão',
     descricao: 'Recheado com coco fresco e regado com leite de coco caseiro, leite Moça e canela',
     categoria: 'cuscuz',
@@ -90,7 +90,7 @@ const pratos = [
   },
   {
     id: 'taa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Areia',
     descricao: 'Regada com manteiga da terra',
     categoria: 'tapiocas arretadas',
@@ -98,7 +98,7 @@ const pratos = [
   },
   {
     id: 'tab',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bananaeiras',
     descricao: 'Recheado com coco fresco',
     categoria: 'tapiocas arretadas',
@@ -106,7 +106,7 @@ const pratos = [
   },
   {
     id: 'tabs',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Beijú Simples',
     descricao: 'Coco fresco ralado, leite Moça',
     categoria: 'tapiocas arretadas',
@@ -114,7 +114,7 @@ const pratos = [
   },
   {
     id: 'tas',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Soledade',
     descricao: 'Ovo e vinagrete',
     categoria: 'tapiocas arretadas',
@@ -122,7 +122,7 @@ const pratos = [
   },
   {
     id: 'taca',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cabedelo',
     descricao: 'Queijo ou coco e queijo',
     categoria: 'tapiocas arretadas',
@@ -130,7 +130,7 @@ const pratos = [
   },
   {
     id: 'tcg',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Campina Grande',
     descricao: 'Recheada com queijo, presunto e coco',
     categoria: 'tapiocas arretadas',
@@ -138,7 +138,7 @@ const pratos = [
   },
   {
     id: 'taso',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Solânea',
     descricao: 'Queijo coalho e calabresa',
     categoria: 'tapiocas arretadas',
@@ -146,7 +146,7 @@ const pratos = [
   },
   {
     id: 'taga',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Guarabira',
     descricao: '4 queijos: coalho, manteiga mussarela e catupiry',
     categoria: 'tapiocas arretadas',
@@ -154,7 +154,7 @@ const pratos = [
   },
   {
     id: 'tajp',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'João Pessoa',
     descricao: 'Frango desfiado, catupiry e orégano',
     categoria: 'tapiocas arretadas',
@@ -162,7 +162,7 @@ const pratos = [
   },
   {
     id: 'tapo',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pombal',
     descricao: 'Carne de sol na nata',
     categoria: 'tapiocas arretadas',
@@ -170,7 +170,7 @@ const pratos = [
   },
   {
     id: 'tamo',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Monteiro',
     descricao: 'Carne de sol desfiada com coalho',
     categoria: 'tapiocas arretadas',
@@ -178,7 +178,7 @@ const pratos = [
   },
   {
     id: 'tacj',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cajazeiras',
     descricao: 'Recheada com banan frita, coco ralado, melaço e queijo coalho',
     categoria: 'tapiocas arretadas',
@@ -186,7 +186,7 @@ const pratos = [
   },
   {
     id: 'taba',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Beiju Arretado',
     descricao: 'Coco fresco ralado, coalho, leite Moça ou mel de engenho',
     categoria: 'tapiocas arretadas',
@@ -194,7 +194,7 @@ const pratos = [
   },
   {
     id: 'tasm',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'São Mamede',
     descricao: 'Recheado com coco fresco e regado com leite de coco caseiro, leite Moça e canela',
     categoria: 'tapiocas arretadas',
@@ -202,7 +202,7 @@ const pratos = [
   },
   {
     id: 'tapi',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Piancó',
     descricao: 'Recheado e coberto com queijo, banana frita, açucar, Nescau, leite Moça e canela',
     categoria: 'tapiocas arretadas',
@@ -210,7 +210,7 @@ const pratos = [
   },
   {
     id: 'tmba',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bananeiras',
     descricao: 'Recheado com coco fresco ralado',
     categoria: 'tapioquinhas',
@@ -218,7 +218,7 @@ const pratos = [
   },
   {
     id: 'tmca',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cabedelo',
     descricao: 'Queijo ou coco e queijo',
     categoria: 'tapioquinhas',
@@ -226,7 +226,7 @@ const pratos = [
   },
   {
     id: 'tmpo',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pombal',
     descricao: 'Carne de sol na nata',
     categoria: 'tapioquinhas',
@@ -234,7 +234,7 @@ const pratos = [
   },
   {
     id: 'tmjp',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'João Pessoa',
     descricao: 'Frango desfiado, catupiry e orégano',
     categoria: 'tapioquinhas',
@@ -242,7 +242,7 @@ const pratos = [
   },
   {
     id: 'tmcg',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Campina Grande',
     descricao: 'Recheado com queijo, presunto e coco',
     categoria: 'tapioquinhas',
@@ -250,7 +250,7 @@ const pratos = [
   },
   {
     id: 'tmba',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bananeiras',
     descricao: 'Recheado com coco fresco ralado',
     categoria: 'tapioquinhas',
@@ -258,7 +258,7 @@ const pratos = [
   },
   {
     id: 'tmcb',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cabaceiras',
     descricao: 'massa de café recheada com doce de leite e corbetura de brigadeiro',
     categoria: 'tapioquinhas',
@@ -266,7 +266,7 @@ const pratos = [
   },
   {
     id: 'tmcj',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cajazeiras',
     descricao: 'Recheada com banana frita, coco ralado, melaço e coalho',
     categoria: 'tapioquinhas',
@@ -274,7 +274,7 @@ const pratos = [
   },
   {
     id: 'tmba',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Beijú Arretado',
     descricao: 'Coco fresco ralado, coalho, leite Moça ou mel de engenho',
     categoria: 'tapioquinhas',
@@ -282,7 +282,7 @@ const pratos = [
   },
   {
     id: 'tmsm',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'São Mamede',
     descricao: 'Recheado com coco fresco e regado com leite de coco caseiro, leite de Moça e canela',
     categoria: 'tapioquinhas',
@@ -290,7 +290,7 @@ const pratos = [
   },
   {
     id: 'tmur',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Uirauna',
     descricao: 'Recheado com brigadeiro caseiro de leite Moça; acompanha M&ms ou Kit Kat',
     categoria: 'tapioquinhas',
@@ -298,7 +298,7 @@ const pratos = [
   },
   {
     id: 'tmpc',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Piancó',
     descricao: 'Recheado e coberto com queijo, banana frita, açucar, Nescau, leite Moça e canela',
     categoria: 'tapioquinhas',
@@ -306,7 +306,7 @@ const pratos = [
   },
   {
     id: 'tmte',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Texeira',
     descricao: 'Recheada com brigadeiro caseiro de leite Moça e morango',
     categoria: 'tapioquinhas',
@@ -314,7 +314,7 @@ const pratos = [
   },
   {
     id: 'jtrb',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Rubacão',
     descricao: 'Feijão verde, arroz refolgado, creme de nata, coalho e carne de sol acebolada',
     categoria: 'jantar',
@@ -322,7 +322,7 @@ const pratos = [
   },
   {
     id: 'jtgg',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Galinha Guizada',
     descricao: 'Filé de peito ou sobrecoxa, macaxeira, vinagrete e farofa',
     categoria: 'jantar',
@@ -330,7 +330,7 @@ const pratos = [
   },
   {
     id: 'jtpb',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Picado de Bode',
     descricao: 'Acompanha macaxeira, vinagrete e farofa',
     categoria: 'jantar',
@@ -338,7 +338,7 @@ const pratos = [
   },
   {
     id: 'jtcq',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Charque',
     descricao: 'Acompanha macaxeira, vinagrete e farofa',
     categoria: 'jantar',
@@ -346,7 +346,7 @@ const pratos = [
   },
   {
     id: 'jtsn',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Carne de sol na Nata',
     descricao: 'Acompanha macaxeira, vinagre e farofa',
     categoria: 'jantar',
@@ -354,7 +354,7 @@ const pratos = [
   },
   {
     id: 'jtsa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Carne de sol Acebolada',
     descricao: 'Acompanha macaxeira, vinagrete e farofa',
     categoria: 'jantar',
@@ -362,7 +362,7 @@ const pratos = [
   },
   {
     id: 'jtbg',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bode guizado',
     descricao: 'Acompanha macaxeira, vinagrete e farofa',
     categoria: 'jantar',
@@ -370,7 +370,7 @@ const pratos = [
   },
   {
     id: 'jtpf',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Frango desfiado',
     descricao: '',
     categoria: 'jantar',
@@ -378,7 +378,7 @@ const pratos = [
   },
   {
     id: 'jtpc',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Calabresa',
     descricao: '',
     categoria: 'jantar',
@@ -386,7 +386,7 @@ const pratos = [
   },
   {
     id: 'jtpn',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Carne de sol na Nata',
     descricao: '',
     categoria: 'jantar',
@@ -394,7 +394,7 @@ const pratos = [
   },
   {
     id: 'jtps',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Carne de sol',
     descricao: 'Carne de sol frita ou desfiada',
     categoria: 'jantar',
@@ -402,7 +402,7 @@ const pratos = [
   },
   {
     id: 'jtpc',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Charque',
     descricao: '',
     categoria: 'jantar',
@@ -410,7 +410,7 @@ const pratos = [
   },
   {
     id: 'jtpp',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Purê de Picado',
     descricao: '',
     categoria: 'jantar',
@@ -418,7 +418,7 @@ const pratos = [
   },
   {
     id: 'ncpa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pamonha na chapa',
     descricao: '',
     categoria: 'jantar',
@@ -426,7 +426,7 @@ const pratos = [
   },
   {
     id: 'ncpa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Queijo coalho na chapa',
     descricao: '',
     categoria: 'jantar',
@@ -434,7 +434,7 @@ const pratos = [
   },
   {
     id: 'ncpa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Queijo com melaço na chapa',
     descricao: '',
     categoria: 'jantar',
@@ -442,7 +442,7 @@ const pratos = [
   },
       {
     id: 'ncpa',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pamonha com queijo na chapa',
     descricao: '',
     categoria: 'jantar',
@@ -450,7 +450,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês na chapa',
     descricao: '',
     categoria: 'sanduíches',
@@ -458,7 +458,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês com Ovo',
     descricao: '',
     categoria: 'sanduíches',
@@ -466,7 +466,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês com queijo',
     descricao: '',
     categoria: 'sanduíches',
@@ -474,7 +474,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês Misto',
     descricao: '',
     categoria: 'sanduíches',
@@ -482,7 +482,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês Americano',
     descricao: 'Queijo, presunto, ovo e salada',
     categoria: 'sanduíches',
@@ -490,7 +490,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Francês e frango',
     descricao: 'Frango desfiado e queijo',
     categoria: 'sanduíches',
@@ -498,7 +498,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira na chapa',
     descricao: '',
     categoria: 'sanduíches',
@@ -506,7 +506,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira com Ovo',
     descricao: '',
     categoria: 'sanduíches',
@@ -514,7 +514,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira com queijo',
     descricao: '',
     categoria: 'sanduíches',
@@ -522,7 +522,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira Misto',
     descricao: '',
     categoria: 'sanduíches',
@@ -530,7 +530,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira Americano',
     descricao: 'Queijo, presunto, ovo e salada',
     categoria: 'sanduíches',
@@ -538,7 +538,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Pão Macaxeira e frango',
     descricao: 'Frango desfiado e queijo',
     categoria: 'sanduíches',
@@ -546,7 +546,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Bode Rei',
     descricao: 'Pão de macaxeira, bode desfiado, queijo manteiga, cebola caramelizada, e chips regional',
     categoria: 'sanduíches',
@@ -554,7 +554,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Moranguinho do Nordeste',
     descricao: 'Pão de macaxeira com carne de sol na nata',
     categoria: 'sanduíches',
@@ -562,7 +562,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Boi Quente',
     descricao: 'Pão de macaxeira com carne de sol, quijo manteiga, cebola caramelizada e chips regional',
     categoria: 'sanduíches',
@@ -570,7 +570,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Galinha Inxirida',
     descricao: 'Pão de macaxeira com frango desfiado, catupiry, mussarela, batata palha, salada e chips regional',
     categoria: 'sanduíches',
@@ -578,7 +578,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Mix Arretado',
     descricao: 'Pão de macaxeira com carne de sol desfiada, frango desfiado, presunto, queijo, ovo, catupiry, batata plaha e chips regional',
     categoria: 'sanduíches',
@@ -586,7 +586,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Queijo',
     descricao: 'Mussarela, coalho ou manteiga',
     categoria: 'pastéis',
@@ -594,7 +594,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Misto',
     descricao: 'Queijo mussarela e presunto de peru',
     categoria: 'pastéis',
@@ -602,7 +602,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Carne moída',
     descricao: '',
     categoria: 'pastéis',
@@ -610,7 +610,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Frango',
     descricao: 'Frango desfiado refolgado',
     categoria: 'pastéis',
@@ -618,7 +618,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Frango com Catupiry',
     descricao: 'Frango desfiado refolgado com Catupiry original',
     categoria: 'pastéis',
@@ -626,7 +626,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Lombinho com Cream Chese',
     descricao: '',
     categoria: 'pastéis',
@@ -634,7 +634,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Carde de sol',
     descricao: 'Carne de sol desfiada com queijo',
     categoria: 'pastéis',
@@ -642,7 +642,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Ouro Branco',
     descricao: '',
     categoria: 'pastéis',
@@ -650,7 +650,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Diamente Negro',
     descricao: '',
     categoria: 'pastéis',
@@ -658,7 +658,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Diamente Laka',
     descricao: '',
     categoria: 'pastéis',
@@ -666,7 +666,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Laka Oreo',
     descricao: '',
     categoria: 'pastéis',
@@ -674,7 +674,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Brigadeiro de colher',
     descricao: '150g de brigadeiro caseiro de leite Moça',
     categoria: 'sobremesas',
@@ -682,7 +682,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cartola tradicional',
     descricao: 'Queijo manteiga, banana frita, açucar, Nescau, canela e leite Moça',
     categoria: 'sobremesas',
@@ -690,7 +690,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cartola especial',
     descricao: 'Queijo manteiga, banana frita, brigadeiro e morango',
     categoria: 'sobremesas',
@@ -698,7 +698,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cartolinha tradicional',
     descricao: 'Queijo manteiga, banana frita, açucar, Nescau, canela e leite Moça',
     categoria: 'sobremesas',
@@ -706,7 +706,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Cartolinha especial',
     descricao: 'Queijo manteiga, banana frita, brigadeiro e morango',
     categoria: 'sobremesas',
@@ -714,7 +714,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Queijo',
     descricao: '40g',
     categoria: 'adicionais',
@@ -722,7 +722,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Catupiry original',
     descricao: '50g',
     categoria: 'adicionais',
@@ -730,7 +730,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Presunto',
     descricao: '40g',
     categoria: 'adicionais',
@@ -738,7 +738,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Ovo',
     descricao: '1 unidade',
     categoria: 'adicionais',
@@ -746,7 +746,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Frango desfiado',
     descricao: '60g',
     categoria: 'adicionais',
@@ -754,7 +754,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Calabresa',
     descricao: '80g',
     categoria: 'adicionais',
@@ -762,7 +762,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Leite Moça',
     descricao: '50g',
     categoria: 'adicionais',
@@ -770,7 +770,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Banana frita',
     descricao: '1 Unidade',
     categoria: 'adicionais',
@@ -778,7 +778,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Vinagrete',
     descricao: '',
     categoria: 'adicionais',
@@ -786,7 +786,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Farofa',
     descricao: '',
     categoria: 'adicionais',
@@ -794,7 +794,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Torradas',
     descricao: '5 Unidades',
     categoria: 'adicionais',
@@ -802,7 +802,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Copo sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
     categoria: 'bebidas',
@@ -810,7 +810,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Copo sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
     categoria: 'bebidas',
@@ -818,7 +818,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Copo com leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
     categoria: 'bebidas',
@@ -826,7 +826,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Jarra sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
     categoria: 'bebidas',
@@ -834,7 +834,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Café P.',
     descricao: '',
     categoria: 'bebidas',
@@ -842,7 +842,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Café G.',
     descricao: '',
     categoria: 'bebidas',
@@ -850,7 +850,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Café com leite P.',
     descricao: '',
     categoria: 'bebidas',
@@ -858,7 +858,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Café com leite G.',
     descricao: '',
     categoria: 'bebidas',
@@ -866,7 +866,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Nescau gelado.',
     descricao: '',
     categoria: 'bebidas',
@@ -874,7 +874,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Capuccino',
     descricao: '',
     categoria: 'bebidas',
@@ -882,7 +882,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Agua sem gás',
     descricao: '500mg',
     categoria: 'bebidas',
@@ -890,7 +890,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Agua com gás',
     descricao: '500mg',
     categoria: 'bebidas',
@@ -898,7 +898,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Coca KS',
     descricao: '',
     categoria: 'bebidas',
@@ -906,7 +906,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Refri lata',
     descricao: '',
     categoria: 'bebidas',
@@ -914,7 +914,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Refri litro',
     descricao: '',
     categoria: 'bebidas',
@@ -922,7 +922,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Vitamina de açaí',
     descricao: '',
     categoria: 'bebidas',
@@ -930,7 +930,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Vitamina de banana',
     descricao: '',
     categoria: 'bebidas',
@@ -938,7 +938,7 @@ const pratos = [
   },
   {
     id: '',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Long neck',
     descricao: '',
     categoria: 'bebidas',
