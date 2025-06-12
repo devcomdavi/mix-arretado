@@ -1,14 +1,6 @@
 // Array de pratos extraído das imagens em /public/imagens/cardapio/
 const pratos = [
   {
-    id: 'pc',
-    imagem: '/imagens/template_prato.png',
-    nome: 'Purê de Calabresa', // Preencher com o nome do prato
-    descricao: 'Delicioso purê de macaxeira com calabresa acebolada', // Preencher com a descrição do prato
-    categoria: 'jantar', // Preencher com a categoria do prato
-    preco: '29,90' // Preencher com o preço do prato
-  },
-  {
     id: 'cal',
     imagem: '/imagens/template_prato.png',
     nome: 'Alagos',
@@ -101,7 +93,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Areia',
     descricao: 'Regada com manteiga da terra',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '7,90'
   },
   {
@@ -109,7 +101,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Bananaeiras',
     descricao: 'Recheado com coco fresco',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '9,90'
   },
   {
@@ -117,7 +109,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Beijú Simples',
     descricao: 'Coco fresco ralado, leite Moça',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '13,90'
   },
   {
@@ -125,7 +117,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Soledade',
     descricao: 'Ovo e vinagrete',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '14,90'
   },
   {
@@ -133,7 +125,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Cabedelo',
     descricao: 'Queijo ou coco e queijo',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '19,90'
   },
   {
@@ -141,7 +133,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Campina Grande',
     descricao: 'Recheada com queijo, presunto e coco',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '22,90'
   },
   {
@@ -149,7 +141,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Solânea',
     descricao: 'Queijo coalho e calabresa',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '23,90'
   },
   {
@@ -157,7 +149,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Guarabira',
     descricao: '4 queijos: coalho, manteiga mussarela e catupiry',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '29,90'
   },
   {
@@ -165,7 +157,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'João Pessoa',
     descricao: 'Frango desfiado, catupiry e orégano',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '29,90'
   },
   {
@@ -173,7 +165,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pombal',
     descricao: 'Carne de sol na nata',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '29,90'
   },
   {
@@ -181,7 +173,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Monteiro',
     descricao: 'Carne de sol desfiada com coalho',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '29,90'
   },
   {
@@ -189,7 +181,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Cajazeiras',
     descricao: 'Recheada com banan frita, coco ralado, melaço e queijo coalho',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '23,90'
   },
   {
@@ -197,7 +189,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Beiju Arretado',
     descricao: 'Coco fresco ralado, coalho, leite Moça ou mel de engenho',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '23,90'
   },
   {
@@ -205,7 +197,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'São Mamede',
     descricao: 'Recheado com coco fresco e regado com leite de coco caseiro, leite Moça e canela',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '24,90'
   },
   {
@@ -213,7 +205,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Piancó',
     descricao: 'Recheado e coberto com queijo, banana frita, açucar, Nescau, leite Moça e canela',
-    categoria: 'tapioca-arretada',
+    categoria: 'tapiocas arretadas',
     preco: '25,90'
   },
   {
@@ -221,7 +213,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Bananeiras',
     descricao: 'Recheado com coco fresco ralado',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '6,90'
   },
   {
@@ -229,7 +221,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Cabedelo',
     descricao: 'Queijo ou coco e queijo',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '10,90'
   },
   {
@@ -237,7 +229,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pombal',
     descricao: 'Carne de sol na nata',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '15,90'
   },
   {
@@ -245,7 +237,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'João Pessoa',
     descricao: 'Frango desfiado, catupiry e orégano',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '15,90'
   },
   {
@@ -253,7 +245,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Campina Grande',
     descricao: 'Recheado com queijo, presunto e coco',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '10,90'
   },
   {
@@ -261,7 +253,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Bananeiras',
     descricao: 'Recheado com coco fresco ralado',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '6,90'
   },
   {
@@ -269,7 +261,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Cabaceiras',
     descricao: 'massa de café recheada com doce de leite e corbetura de brigadeiro',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -277,7 +269,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Cajazeiras',
     descricao: 'Recheada com banana frita, coco ralado, melaço e coalho',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -285,7 +277,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Beijú Arretado',
     descricao: 'Coco fresco ralado, coalho, leite Moça ou mel de engenho',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -293,7 +285,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'São Mamede',
     descricao: 'Recheado com coco fresco e regado com leite de coco caseiro, leite de Moça e canela',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -301,7 +293,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Uirauna',
     descricao: 'Recheado com brigadeiro caseiro de leite Moça; acompanha M&ms ou Kit Kat',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -309,7 +301,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Piancó',
     descricao: 'Recheado e coberto com queijo, banana frita, açucar, Nescau, leite Moça e canela',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -317,7 +309,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Texeira',
     descricao: 'Recheada com brigadeiro caseiro de leite Moça e morango',
-    categoria: 'tapioquinha',
+    categoria: 'tapioquinhas',
     preco: '14,90'
   },
   {
@@ -461,7 +453,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês na chapa',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '6,90'
   },
   {
@@ -469,7 +461,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês com Ovo',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '8,90'
   },
   {
@@ -477,7 +469,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês com queijo',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '9,90'
   },
   {
@@ -485,7 +477,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês Misto',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '12,90'
   },
   {
@@ -493,7 +485,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês Americano',
     descricao: 'Queijo, presunto, ovo e salada',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '17,90'
   },
   {
@@ -501,7 +493,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Francês e frango',
     descricao: 'Frango desfiado e queijo',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '17,90'
   },
   {
@@ -509,7 +501,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira na chapa',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '9,90'
   },
   {
@@ -517,7 +509,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira com Ovo',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '9,90'
   },
   {
@@ -525,7 +517,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira com queijo',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '12,90'
   },
   {
@@ -533,7 +525,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira Misto',
     descricao: '',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '16,90'
   },
   {
@@ -541,7 +533,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira Americano',
     descricao: 'Queijo, presunto, ovo e salada',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '19,90'
   },
   {
@@ -549,7 +541,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Pão Macaxeira e frango',
     descricao: 'Frango desfiado e queijo',
-    categoria: 'sanduiches',
+    categoria: 'sanduíches',
     preco: '9,90'
   },
   {
@@ -557,7 +549,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Bode Rei',
     descricao: 'Pão de macaxeira, bode desfiado, queijo manteiga, cebola caramelizada, e chips regional',
-    categoria: 'sanduiches-especiais',
+    categoria: 'sanduíches',
     preco: '29,90'
   },
   {
@@ -565,7 +557,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Moranguinho do Nordeste',
     descricao: 'Pão de macaxeira com carne de sol na nata',
-    categoria: 'sanduiches-especiais',
+    categoria: 'sanduíches',
     preco: '27,90'
   },
   {
@@ -573,7 +565,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Boi Quente',
     descricao: 'Pão de macaxeira com carne de sol, quijo manteiga, cebola caramelizada e chips regional',
-    categoria: 'sanduiches-especiais',
+    categoria: 'sanduíches',
     preco: '36,90'
   },
   {
@@ -581,7 +573,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Galinha Inxirida',
     descricao: 'Pão de macaxeira com frango desfiado, catupiry, mussarela, batata palha, salada e chips regional',
-    categoria: 'sanduiches-especiais',
+    categoria: 'sanduíches',
     preco: '36,90'
   },
   {
@@ -589,7 +581,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Mix Arretado',
     descricao: 'Pão de macaxeira com carne de sol desfiada, frango desfiado, presunto, queijo, ovo, catupiry, batata plaha e chips regional',
-    categoria: 'sanduiches-especiais',
+    categoria: 'sanduíches',
     preco: '39,90'
   },
   {
@@ -597,7 +589,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Queijo',
     descricao: 'Mussarela, coalho ou manteiga',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '15,90'
   },
   {
@@ -605,7 +597,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Misto',
     descricao: 'Queijo mussarela e presunto de peru',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '15,90'
   },
   {
@@ -613,7 +605,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Carne moída',
     descricao: '',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '21,90'
   },
   {
@@ -621,7 +613,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Frango',
     descricao: 'Frango desfiado refolgado',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '17,90'
   },
   {
@@ -629,7 +621,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Frango com Catupiry',
     descricao: 'Frango desfiado refolgado com Catupiry original',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '19,90'
   },
   {
@@ -637,7 +629,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Lombinho com Cream Chese',
     descricao: '',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '22,90'
   },
   {
@@ -645,7 +637,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Carde de sol',
     descricao: 'Carne de sol desfiada com queijo',
-    categoria: 'pasteis-salgados',
+    categoria: 'pastéis',
     preco: '24,90'
   },
   {
@@ -653,7 +645,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Ouro Branco',
     descricao: '',
-    categoria: 'pasteis-doces',
+    categoria: 'pastéis',
     preco: '23,90'
   },
   {
@@ -661,7 +653,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Diamente Negro',
     descricao: '',
-    categoria: 'pasteis-doces',
+    categoria: 'pastéis',
     preco: '23,90'
   },
   {
@@ -669,7 +661,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Diamente Laka',
     descricao: '',
-    categoria: 'pasteis-doces',
+    categoria: 'pastéis',
     preco: '23,90'
   },
   {
@@ -677,7 +669,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Laka Oreo',
     descricao: '',
-    categoria: 'pasteis-doces',
+    categoria: 'pastéis',
     preco: '23,90'
   },
   {
@@ -813,7 +805,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Copo sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
-    categoria: 'sucos',
+    categoria: 'bebidas',
     preco: '10,90'
   },
   {
@@ -821,7 +813,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Copo sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
-    categoria: 'sucos',
+    categoria: 'bebidas',
     preco: '10,90'
   },
   {
@@ -829,7 +821,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Copo com leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
-    categoria: 'sucos',
+    categoria: 'bebidas',
     preco: '12,90'
   },
   {
@@ -837,7 +829,7 @@ const pratos = [
     imagem: '/imagens/template_prato.png',
     nome: 'Jarra sem leite',
     descricao: 'Acerola | Abacaxi com hortelã | Cajá | Caju | Graviola | Goiaba | Laranja (fruta) | Limão (fruta) | Maracujá | Morango | Manga | Mangaba | Uva',
-    categoria: 'sucos',
+    categoria: 'bebidas',
     preco: '20,90'
   },
   {
