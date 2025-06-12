@@ -10,7 +10,7 @@ const pratos = [
   },
   {
     id: 'cgo',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '/mix-arretado/public/imagens/template_prato.png',
     nome: 'Goiás',
     descricao: 'Ovos fritos: mexidos ou inteiros',
     categoria: 'cuscuz',
@@ -18,7 +18,7 @@ const pratos = [
   },
   {
     id: 'crs',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: './public/imagens/template_prato.png',
     nome: 'Rio Grande do Sul',
     descricao: 'Queijo coalho, manteiga ou mussarela',
     categoria: 'cuscuz',
@@ -26,7 +26,7 @@ const pratos = [
   },
   {
     id: 'crr',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../imagens/template_prato.png',
     nome: 'Roraima',
     descricao: 'Picado de bode',
     categoria: 'cuscuz',
@@ -34,7 +34,7 @@ const pratos = [
   },
   {
     id: 'cba',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: 'public/imagens/template_prato.png',
     nome: 'Bahia',
     descricao: 'calabresa e queijo coalho',
     categoria: 'cuscuz',
@@ -42,7 +42,7 @@ const pratos = [
   },
   {
     id: 'cmt',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '/public/imagens/template_prato.png',
     nome: 'Mato Grosso',
     descricao: 'Galinha guisada: filé de peito ou sobrecoxa',
     categoria: 'cuscuz',
@@ -50,7 +50,7 @@ const pratos = [
   },
   {
     id: 'cpb',
-    imagem: '../public/imagens/template_prato.png',
+    imagem: '../../../public/imagens/template_prato.png',
     nome: 'Paraíba',
     descricao: 'Carne do sol na nata',
     categoria: 'cuscuz',

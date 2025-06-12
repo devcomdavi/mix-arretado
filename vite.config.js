@@ -10,8 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        cardapio: './pages/cardapio.html',
-        sobre: './pages/sobre.html',
+        cardapio: './mix-arretado/pages/cardapio.html',
+        sobre: './mix-arretado/pages/sobre.html',
       },
     },
   },
