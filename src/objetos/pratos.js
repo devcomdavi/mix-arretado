@@ -2,7 +2,7 @@
 const pratos = [
   {
     id: 'pc',
-    imagem: '/imagens/pure_calabresaOK.jpg',
+    imagem: '/imagens/template_prato.png',
     nome: 'Purê de Calabresa', // Preencher com o nome do prato
     descricao: 'Delicioso purê de macaxeira com calabresa acebolada', // Preencher com a descrição do prato
     categoria: 'jantar', // Preencher com a categoria do prato
