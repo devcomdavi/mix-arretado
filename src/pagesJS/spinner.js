@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('saibaMaisSpinner').classList.remove('hidden');
         document.getElementById('saibaMaisSpinner').classList.add('inline');
         document.getElementById('saibaMaisText').textContent = 'Carregando...';
-
+        const linkElement = document.getElementById('saibaMaisLink');
         // Atraso para garantir que o spinner seja visível antes do redirecionamento
         setTimeout(function() {
-        window.location.href = '/pages/sobre.html';
+        window.location.href = linkElement.href;
         }, 500);
     });
 });
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('verMaisSpinner').classList.remove('hidden');
         document.getElementById('verMaisSpinner').classList.add('inline');
         document.getElementById('verMaisText').textContent = 'Carregando...';
-
+        const linkElement = document.getElementById('verMaisLink');
         // Atraso para garantir que o spinner seja visível antes do redirecionamento
         setTimeout(function() {
-        window.location.href = '/pages/cardapio.html';
+        window.location.href = linkElement.href;
         }, 500);
     });
 });
