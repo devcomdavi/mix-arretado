@@ -1,18 +1,27 @@
 {
   "name": "mix-arretado",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^6.3.5"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.8",
-    "tailwindcss": "^4.1.8"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.4.6"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.6",
+    "@eslint/eslintrc": "^3"
   }
 }

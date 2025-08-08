@@ -1,48 +1,36 @@
-# 🍽️ Restaurante Mix Arretado
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
----
+## Getting Started
 
-## 🧾 Sobre o projeto
+First, run the development server:
 
-Este site foi desenvolvido como parte da disciplina **Linguagem Script - 2025.1**. Criado por três estudantes com foco em praticar HTML, CSS, JavaScript e o uso de ferramentas modernas como **Vite** e **TailwindCSS**.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Apesar de ter nascido como um projeto acadêmico, **o objetivo é dar continuidade a ele e transformá-lo no site oficial do restaurante da família de um dos integrantes**. Um restaurante nordestino que carrega cultura, memória afetiva e muito sabor!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🌵 Sobre o Restaurante
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-O **Mix Arretado** é um restaurante temático de culinária nordestina que valoriza receitas típicas, temperos autênticos e a sensação de comida feita em casa — ou melhor, **na casa da vó!**
+## Learn More
 
-> "Restaurante que tem um tempero de voinha e te faz reviver lembranças inesquecíveis."
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🛠️ Tecnologias utilizadas
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- ⚡ [Vite](https://vitejs.dev/)
-- 🎨 [TailwindCSS](https://tailwindcss.com/)
-- 🧠 JavaScript Vanilla (sem frameworks)
-- 🧩 HTML5 + CSS3
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📚 Estrutura do projeto
-
-## 👨‍🍳 Funcionalidades
-
-- Página inicial com destaque visual e frases temáticas
-- Seção com o cardápio principal
-- Página de contato com formulário funcional e spinner de carregamento
-- Design responsivo (adaptável para celular, tablet e desktop)
-- Navegação rápida entre páginas com feedback visual
-
----
-
-### 👨‍🍳 Integrantes do Projeto
-
-| Foto                                                       | Nome              | GitHub                                       | LinkedIn                                       |
-| ---------------------------------------------------------- | ----------------- | -------------------------------------------- | ---------------------------------------------- |
-| <img src="https://github.com/devcomdavi.png" width="100"/> | **Davi Holanda**  | [@devcomdavi](https://github.com/devcomdavi) | [LinkedIn](https://linkedin.com/in/davihmn/)   |
-| <img src="https://github.com/cpmcaio.png" width="100"/>    | **Caio da Costa** | [@cpmcaio](https://github.com/cpmcaio)       | [LinkedIn](https://linkedin.com/in/cpmcaio/)   |
-| <img src="https://github.com/ian2z.png" width="100"/>      | **Josef Ian**     | [@ian2z](https://github.com/ian2z)           | [LinkedIn](https://linkedin.com/in/josef-ian/) |
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
