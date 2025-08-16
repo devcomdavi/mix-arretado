@@ -1,26 +1,275 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    position: sticky; /* fixa o elemento em determinado limite */
+    top: 0; /* fixa no topo da página */
+    z-index: 1000;
+    background-color: #3B1F11;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dimensões da logo na navbar */
+header .logo img{
+    height: 110px;
+    width: 110px;
+}
+
+
+header #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* faz o conteúdo ocupar um box inteiro do flex-box */
+}
+
+/* estilização da lista de links na navbar */
+header #navbar #nav-list{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-left: -100px;
+    gap: 48px;
+}
+
+/* estilização dos itens da lista */
+#nav-list .nav-item {
+    transition: transform 0.2s ease-in-out;
+}
+
+#nav-list .nav-item:hover {
+    transform: scale(1.02); /* aumentar o tamanho */
+}
+
+/* estilização dos links no navbar */
+#nav-list .nav-item a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+#nav-list .nav-item a:hover {
+    color: #FFD34E;
+    text-decoration: underline;
+    transition: color 0.5s; /* transição de cor */
+}
+
+#home{ /* cria um layout full screen para a home */
+    display: flex; /* Define o layout como flexbox */
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/images/pure_OK.jpg);/* Define a imagem de fundo */
+    background-size: cover;/* Faz com que a imagem de fundo cubra completamente a área disponível */
+}
+
+#texto_home .title{ /* estilização do texto */
+    color: orange;
+    font-size: 6rem;
+    font-family: Xilosa;
+    margin-bottom: 30px;
+
+}
+
+#texto_home .title span{/* estilização do span */
+    color: #F26938;
+    font-family: Xilosa;
+}
+
+#texto_home .description{ /*descrição rápida do restaurante */
+    font-size: 1.5rem;
+    color: white;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.imagem-descricao{/*imagem do conheça nossa história */
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px){ /*configurações de responsividade*/
+    #home{
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #texto_home{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #texto_home .title{
+        font-size: 4rem;
+        font-family: Xilosa;
+    }
+
+    #texto_home .title span {
+        color: rgb(253, 107, 54);
+    }
+
+    #texto_home .description{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #texto_home .title {
+        font-size: 3rem;
+    }
+
+    #texto_home .description {
+        font-size: 1rem;
+    }
+}
+
+#dishes{ /*configurações dos pratos */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 2rem;
+}
+
+#dishes h2 {
+    font-family: xilosa;
+}
+
+.dish-image{ /*configurações do layout dos pratos */
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.section-title{/*título */
+    color: orange;
+    font-family: xilosa;
+    font-size: 5rem;
+}
+
+.section-subtitle{/*subtítulo */
+    font-size: 1.5rem;
+    color: white;
+}
+
+.button-menu:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1065px) {/*configuração de responsividade */
+    #dishes {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #dishes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #dishes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px){ 
+    #menu .section-subtitle{
+        text-align: center;
+    }
+}
+
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+}
+
+body{
+    background-color: #f0f8ff;
+}
+
+section{
+    padding: 28px 8%;
+}
+
+#contato-mix{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    gap: 3rem;
+}
+
+.mapa{
+   height: 40vh;
+   border-radius: 80px;
+   padding: 50px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer p {
+    color: #F0F8FF;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .mix-arretado {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem-descricao {
+        width: 500px;
+    }    
+}
+
+@media (max-width: 900px) {
+    #contato-mix{
+        flex-wrap: wrap;
+    }
+    
+    .mapa{
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .imagem-descricao{
+        display: none;
+    }
+    .dados-sobre p{
+        text-align: justify;
+    }
+    .dados-sobre h1 {
+        margin: auto auto 20px auto;
+    }
 }

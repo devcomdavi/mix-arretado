@@ -1,96 +1,92 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Navbar } from '../components/Navbar';
 import { ContactForm } from '../components/ContactForm';
+import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["200","400", "700","800"],
   subsets: ["latin"],
 });
 
 export default function Home() {
   return (
-  <>
+  <div className={poppins.className}>
     <Navbar />
     <main className="bg-image">
         <section id="home">
             <div id="texto_home">
-                <h1 class="title">
+                <h1 className="title">
                     Comida que abraça e<br/>
                     <span>enche o bucho!</span>
                 </h1>
-                <p class="description">
+                <p className="description">
                     Restaurante que tem um tempero de voinha e te faz reviver lembranças inesquecíveis
                 </p>
             </div>
         </section>
 
-      <section id="sobre" class="w-full mx-auto flex gap-[5rem] justify-center items-center max-[1200px]:flex-col">
-          <section class="dados-sobre">
-          <h1 class="mb-5 text-2xl max-[600px]:mx-auto max-[600px]:mb-5">Conheça nossa história</h1>
-              <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet magnam corporis tempora ipsam odit atque esse in, ullam quidem assumenda voluptas quae. Suscipit earum saepe laudantium non, quam natus reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci provident neque iure, dignissimos ex in enim. Ratione iste voluptate eligendi, voluptatum quasi optio nisi, soluta quo libero necessitatibus distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis modi voluptas reiciendis consequuntur sapiente? Eligendi ducimus tempore sed cumque veritatis quis, recusandae, quo vitae id est corporis itaque pariatur?</p>
-              <div class="botao-sobre">
-                <a href="pages/sobre.html" id="saibaMaisLink">
-                  <button id="saibaMaisButton" class="button-menu center mt-8 px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition flex items-center">
+      <section id="sobre" className="w-full mx-auto flex gap-[5rem] justify-center items-center max-[1200px]:flex-col">
+          <section className="dados-sobre">
+          <h1 className="mb-5 text-2xl max-[600px]:mx-auto max-[600px]:mb-5">Conheça nossa história</h1>
+              <p className="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet magnam corporis tempora ipsam odit atque esse in, ullam quidem assumenda voluptas quae. Suscipit earum saepe laudantium non, quam natus reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci provident neque iure, dignissimos ex in enim. Ratione iste voluptate eligendi, voluptatum quasi optio nisi, soluta quo libero necessitatibus distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis modi voluptas reiciendis consequuntur sapiente? Eligendi ducimus tempore sed cumque veritatis quis, recusandae, quo vitae id est corporis itaque pariatur?</p>
+              <div className="botao-sobre">
+                <Link href="/sobre" id="saibaMaisLink">
+                  <button id="saibaMaisButton" className="button-menu center mt-8 px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition flex items-center">
                     <span id="saibaMaisText">Saiba mais</span>
-                    <svg id="saibaMaisSpinner" class="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="saibaMaisSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
                       <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
                     </svg>
                   </button>
-                </a>
+                </Link>
               </div>
           </section>
-              <img src="./public/imagens/ambiente.jpg" class="flex-1 max-[1200px]:w-[500px] max-[600px]:hidden mt-[-60px]" alt="foto da descrição"/>
+              <img src="./images/ambiente.jpg" className="flex-1 max-[1200px]:w-[500px] max-[600px]:hidden mt-[-60px]" alt="foto da descrição"/>
       </section>
       
-      <section id="cardapio-index" class="flex flex-col items-center justify-center w-full bg-[#3B1F11]">
-          <h2 class="section-title">Cardápio</h2>
-          <h3 class="section-subtitle">Nossos pratos especiais</h3>
+      <section id="cardapio-index" className="flex flex-col items-center justify-center w-full bg-[#3B1F11]">
+          <h2 className="section-title">Cardápio</h2>
+          <h3 className="section-subtitle">Nossos pratos especiais</h3>
           <div id="dishes">
-              <div class="container mx-auto p-4">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <div class="bg-white shadow-lg rounded-2xl p-4">
-                      <img src="./public/imagens/cuscuz_paraibaOK.jpg" alt="Nome do Prato" class="w-full h-48 object-cover rounded-xl"/>
-                      <div class="mt-4">
-                        <h2 class="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Cuscuz Paraíba</h2>
-                        <p class="text-center text-gray-500 mt-2">O Cuscuz Paraíba vem com uma porção recheada de nossa carne de sol na nata pra encher buxo de mininin</p>
-                        <div class="mt-3 flex justify-center items-center">
+              <div className="container mx-auto p-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="bg-white shadow-lg rounded-2xl p-4">
+                      <img src="./images/cuscuz_paraibaOK.jpg" alt="Nome do Prato" className="w-full h-48 object-cover rounded-xl"/>
+                      <div className="mt-4">
+                        <h2 className="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Cuscuz Paraíba</h2>
+                        <p className="text-center text-gray-500 mt-2">O Cuscuz Paraíba vem com uma porção recheada de nossa carne de sol na nata pra encher buxo de mininin</p>
+                        <div className="mt-3 flex justify-center items-center">
                         </div>
                       </div>
                     </div>
                     
-                    <div class="bg-white shadow-lg rounded-2xl p-4">
-                      <img src="./public/imagens/pure_calabresaOK.jpg" alt="Nome do Prato" class="w-full h-48 object-cover rounded-xl"/>
-                      <div class="mt-4">
-                        <h2 class="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Purê Calabresa</h2>
-                        <p class="text-center text-gray-500 mt-2">O Purê de macaxeira com calabresa acebolada é sem igual em sua cremosidade e sabor</p>
-                        <div class="mt-3 flex justify-center items-center">
+                    <div className="bg-white shadow-lg rounded-2xl p-4">
+                      <img src="./images/pure_calabresaOK.jpg" alt="Nome do Prato" className="w-full h-48 object-cover rounded-xl"/>
+                      <div className="mt-4">
+                        <h2 className="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Purê Calabresa</h2>
+                        <p className="text-center text-gray-500 mt-2">O Purê de macaxeira com calabresa acebolada é sem igual em sua cremosidade e sabor</p>
+                        <div className="mt-3 flex justify-center items-center">
                         </div>
                       </div>
                     </div>
               
-                    <div class="bg-white shadow-lg rounded-2xl p-4">
-                      <img src="./public/imagens/cartolaOK.jpg" alt="Nome do Prato" class="w-full h-48 object-cover rounded-xl"/>
-                      <div class="mt-4">
-                        <h2 class="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Cartola Especial</h2>
-                        <p class="text-center text-gray-500 mt-2">A Cartola Especial é a nossa sobremesa queridinha, uma releitura da famosa cartola nordestina com um toque especial surpreendente</p>
-                        <div class="mt-3 flex justify-center items-center">
+                    <div className="bg-white shadow-lg rounded-2xl p-4">
+                      <img src="./images/cartolaOK.jpg" alt="Nome do Prato" className="w-full h-48 object-cover rounded-xl"/>
+                      <div className="mt-4">
+                        <h2 className="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">Cartola Especial</h2>
+                        <p className="text-center text-gray-500 mt-2">A Cartola Especial é a nossa sobremesa queridinha, uma releitura da famosa cartola nordestina com um toque especial surpreendente</p>
+                        <div className="mt-3 flex justify-center items-center">
                         </div>
                       </div>
                     </div>
 
-                    <div class="bg-white shadow-lg rounded-2xl p-4">
-                      <img src="./public/imagens/tapioca_joaopessoaOK.jpg" alt="Nome do Prato" class="w-full h-48 object-cover rounded-xl"/>
-                      <div class="mt-4">
-                        <h2 class="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">João Pessoa</h2>
-                        <p class="text-center text-gray-500 mt-2">A Tapioca João Pessoa traz o clássico frango com catupiry, mas com um tempero sem igual que deixa tudo muito mais gostoso</p>
-                        <div class="mt-3 flex justify-center items-center">
+                    <div className="bg-white shadow-lg rounded-2xl p-4">
+                      <img src="./images/tapioca_joaopessoaOK.jpg" alt="Nome do Prato" className="w-full h-48 object-cover rounded-xl"/>
+                      <div className="mt-4">
+                        <h2 className="font-[xilosa] text-center text-3xl font-semibold text-[#ffa500]">João Pessoa</h2>
+                        <p className="text-center text-gray-500 mt-2">A Tapioca João Pessoa traz o clássico frango com catupiry, mas com um tempero sem igual que deixa tudo muito mais gostoso</p>
+                        <div className="mt-3 flex justify-center items-center">
                         </div>
                       </div>
                     </div>
@@ -98,70 +94,70 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div class="flex justify-center mt-6">
-                <a href="pages/cardapio.html" id="verMaisLink">
-                  <button id="verMaisButton" class="button-menu px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition">
+              <div className="flex justify-center mt-6">
+                <Link href="/cardapio" id="verMaisLink">
+                  <button id="verMaisButton" className="button-menu px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition">
                     <span id="verMaisText">Ver mais</span>
-                    <svg id="verMaisSpinner" class="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="verMaisSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
                       <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
                     </svg>
                   </button>
-                </a>
+                </Link>
               </div>      
       </section>
 
-      <section id="contato-mix" class="flex flex-1 items-center justify-center content-end gap-[3rem] max-[900px]:flex-wrap">
+      <section id="contato-mix" className="flex flex-1 items-center justify-center content-end gap-[3rem] max-[900px]:flex-wrap">
           <div id="contatos">
               <h1>Fale com a gente</h1>
               <p>Ficou com água na boca? Faz a tua avaliação mininu!</p>
               
-    <form class="max-w-md mx-auto my-5">
-        <div class="grid md:grid-cols-2 md:gap-6 my-5">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Telefone</label>
+    <form className="max-w-md mx-auto my-5">
+        <div className="grid md:grid-cols-2 md:gap-6 my-5">
+            <div className="relative z-0 w-full mb-5 group">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Telefone</label>
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">E-mail</label>
+            <div className="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">E-mail</label>
             </div>
           </div>
-        <div class="grid md:grid-cols-2 md:gap-6">
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Primeiro Nome</label>
+        <div className="grid md:grid-cols-2 md:gap-6">
+          <div className="relative z-0 w-full mb-5 group">
+              <input type="text" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_first_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Primeiro Nome</label>
           </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-              <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Último Nome</label>
+          <div className="relative z-0 w-full mb-5 group">
+              <input type="text" name="floating_last_name" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_last_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Último Nome</label>
           </div>
         </div>
     </form>
-    <form class="max-w-sm mx-auto">
-        <label for="message" class="block mb-2 text-sm font-ligth text-gray-900 dark:text-gray">Sua mensagem</label>
-        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escreva seu comentário..."></textarea>
+    <form className="max-w-sm mx-auto">
+        <label for="message" className="block mb-2 text-sm font-ligth text-gray-900 dark:text-gray">Sua mensagem</label>
+        <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escreva seu comentário..."></textarea>
         
-        <button type="submit" id="submitButton" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 my-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <button type="submit" id="submitButton" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 my-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           <span id="submitText">Enviar</span>
-          <svg id="submitSpinner" class="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg id="submitSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
             <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
           </svg>
         </button>
         
       </form>
-              <h3 class="mt-5">Nossas redes sociais:</h3>
-              <div class="flex gap-8 mt-6">
-                  <a href="https://www.instagram.com/mixarretadojp/" class="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="instagram">
-                      <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a href="https://api.whatsapp.com/send?phone=5583988763045" class="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
-                      <i class="fa-brands fa-whatsapp"></i>
-                  </a>
-                  <a href="https://www.ifood.com.br/delivery/joao-pessoa-pb/mix-arretado-estados/478e9723-415f-40a9-b411-cdf5f9f02cac" class="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
+              <h3 className="mt-5">Nossas redes sociais:</h3>
+              <div className="flex gap-8 mt-6">
+                  <Link href="https://www.instagram.com/mixarretadojp/" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="instagram">
+                      <i className="fa-brands fa-instagram"></i>
+                  </Link>
+                  <Link href="https://api.whatsapp.com/send?phone=5583988763045" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
+                      <i className="fa-brands fa-whatsapp"></i>
+                  </Link>
+                  <Link href="https://www.ifood.com.br/delivery/joao-pessoa-pb/mix-arretado-estados/478e9723-415f-40a9-b411-cdf5f9f02cac" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8.428 1.67c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006c4.244 0 7.184-3.854 7.184-6.998c0-2.29-2.175-3.293-4.244-3.293m11.328 0c-4.65 0-7.184 4.149-7.184 6.998c0 2.294 2.2 3.299 4.25 3.299l-.006-.006C21.061 11.96 24 8.107 24 4.963c0-2.29-2.18-3.293-4.244-3.293m-5.584 12.85l2.435 1.834c-2.17 2.07-6.124 3.525-9.353 3.17A8.91 8.91 0 0 1 .23 14.541H0a9.6 9.6 0 0 0 8.828 7.758c3.814.24 7.323-.905 9.947-3.13l-.004.007l1.08 2.988l1.555-7.623l-7.234-.02Z"/></svg>
-                  </a>
+                  </Link>
               </div>
           </div>
           <iframe 
@@ -182,6 +178,6 @@ export default function Home() {
         © Mix Arretado. Todos os direitos reservados.
       </p>
     </footer>
-  </>
+  </div>
   );
 }
