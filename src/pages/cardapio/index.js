@@ -2,16 +2,18 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { Navbar } from '../../components/Navbar';
 import { useEffect, useState } from "react";
+import { OrbitProgress } from "react-loading-indicators";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["200","400", "700","800"],
+  weight: ["200", "400", "700", "800"],
   subsets: ["latin"],
 });
 
 export default function Cardapio() {
     const [pratos, setPratos] = useState([]);
     const [filteredPratos, setFilteredPratos] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     function filterMenu(categoria) {
         if(categoria === 'all') {
@@ -28,6 +30,7 @@ export default function Cardapio() {
             const pratosData = await pratoResponse.json();
             setPratos(pratosData);
             setFilteredPratos(pratosData);
+            setLoading(false);
         }
     
         fetchPratos();
@@ -70,6 +73,11 @@ export default function Cardapio() {
                         )
                     }
                 </div>
+                { loading && 
+                <div className="flex justify-center items-center w-full h-full">
+                    <OrbitProgress color="#FFA500" size="medium" />
+                </div>
+                }
             </div>
         </div>
     );
