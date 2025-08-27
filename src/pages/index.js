@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import { Navbar } from '../components/Navbar';
+import { ContactForm } from '../components/FormularioContato';
 import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { SiIfood } from "react-icons/si";
 import Link from "next/link";
@@ -36,7 +37,7 @@ export default function Home() {
                   <button id="saibaMaisButton" className="button-menu center mt-8 px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition flex items-center">
                     <span id="saibaMaisText">Saiba mais</span>
                     <svg id="saibaMaisSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
+                      <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
                       <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
                     </svg>
                   </button>
@@ -100,7 +101,7 @@ export default function Home() {
             <button id="verMaisButton" className="button-menu px-6 py-3 bg-[#ffa500] text-white rounded-xl shadow-md hover:bg-[#ff8c00] transition">
               <span id="verMaisText">Ver mais</span>
               <svg id="verMaisSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
+                <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
                 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
               </svg>
             </button>
@@ -113,41 +114,8 @@ export default function Home() {
           <h1>Fale com a gente</h1>
           <p>Ficou com água na boca? Faz a tua avaliação mininu!</p>
             
-          <form className="max-w-md mx-auto my-5">
-            <div className="grid md:grid-cols-2 md:gap-6 my-5">
-              <div className="relative z-0 w-full mb-5 group">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_phone" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Telefone</label>
-              </div>
-              <div className="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">E-mail</label>
-              </div>
-              </div>
-            <div className="grid md:grid-cols-2 md:gap-6">
-              <div className="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_first_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Primeiro Nome</label>
-              </div>
-              <div className="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_last_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Último Nome</label>
-              </div>
-            </div>
-          </form>
-          
-          <form className="max-w-sm mx-auto">
-            <label for="message" className="block mb-2 text-sm font-ligth text-gray-900 dark:text-gray">Sua mensagem</label>
-            <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escreva seu comentário..."></textarea>
-            
-            <button type="submit" id="submitButton" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 my-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              <span id="submitText">Enviar</span>
-              <svg id="submitSpinner" className="hidden mr-3 size-5 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"/>
-                <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"/>
-              </svg>
-            </button>    
-          </form>
+          {/* ✅ AQUI: Substitui os formulários HTML pelo componente React */}
+          <ContactForm />
           
           <h3 className="mt-5">Nossas redes sociais:</h3>
           <div className="flex gap-8 mt-6">
@@ -157,7 +125,7 @@ export default function Home() {
             <Link href="https://api.whatsapp.com/send?phone=5583988763045" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
               <FaWhatsapp />
             </Link>
-            <Link href="https://www.ifood.com.br/delivery/joao-pessoa-pb/mix-arretado-estados/478e9723-415f-40a9-b411-cdf5f9f02cac" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="whatsapp">
+            <Link href="https://www.ifood.com.br/delivery/joao-pessoa-pb/mix-arretado-estados/478e9723-415f-40a9-b411-cdf5f9f02cac" className="flex items-center justify-center w-10 h-10 text-[1.3rem] rounded text-black no-underline hover:shadow-[0_0_12px_2px_rgb(198,198,198)]" id="ifood">
               <SiIfood />
             </Link>
           </div>
